@@ -5,7 +5,7 @@ import re
 url = "https://www.google.com"
 
 # Open a file to write the results to
-with open("js_files.txt", "w") as output_file:
+with open("js_hasil.txt", "w") as output_file:
   # Send a request to the website and retrieve the HTML
   response = requests.get(url)
   html = response.text
@@ -25,6 +25,6 @@ with open("js_files.txt", "w") as output_file:
       js_content = js_response.text
 
       # Check if the "admin" context is present in the JavaScript file
-      if "admin" in js_content:
+      if "href" in js_content:
         # Write the URL of the JavaScript file to the output file
         output_file.write(js_url + "\n")
