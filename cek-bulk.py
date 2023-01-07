@@ -7,7 +7,7 @@ GREEN = '\033[92m'
 RESET = '\033[0m'
 
 # Open the file containing the list of URLs
-with open('hmm.txt', 'r') as f:
+with open('mtr.txt', 'r') as f:
     # Read each line in the file (each line is a URL)
     for url in f:
         # Strip leading/trailing whitespace and newline characters from the URL
