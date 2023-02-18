@@ -1,5 +1,5 @@
 # List the input files
-input_files = ['urls1.txt', 'urls2.txt', 'urls3.txt']
+input_files = ['lun1.txt', 'lun2.txt', 'lun3.txt']
 
 # Open the output file
 with open('hasil.txt', 'w') as outfile:
